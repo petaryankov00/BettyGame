@@ -20,10 +20,10 @@ namespace BettyGame
             // Set up DI
             var services = new ServiceCollection()
                 .AddSingleton<IConsoleWrapper, ConsoleWrapper>()
-                .AddTransient<IGameService, GameService>()
-                .AddTransient<IPlayerWalletService, PlayerWalletService>()
-                .AddTransient<IBetCalculatorService, BetCalculatorService>()
-                .AddTransient<IRandomGenerator, RandomGenerator>();
+                .AddSingleton<IGameService, GameService>()
+                .AddSingleton<IPlayerWalletService, PlayerWalletService>()
+                .AddSingleton<IBetCalculatorService, BetCalculatorService>()
+                .AddSingleton<IRandomGenerator, RandomGenerator>();
 
             services.Configure<BetOptions>(configuration.GetSection("BetOptions"));
 
