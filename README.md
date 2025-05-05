@@ -37,6 +37,7 @@ The game's logic and outcomes are driven by the following configuration:
     "WinRatioEnd": 10.00
   }
 }
+```
 
 ## 📝 Notes:
 
