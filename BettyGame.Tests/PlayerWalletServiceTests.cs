@@ -28,6 +28,7 @@ namespace BettyGame.Tests
 
             // Assert
             Assert.True(result.IsSuccess);
+            Assert.Equal(amount, _playerWalletService.Balance);
             Assert.Contains("Your deposit of $50 was successful", result.Message);
         }
 
@@ -58,6 +59,7 @@ namespace BettyGame.Tests
 
             // Assert
             Assert.True(result.IsSuccess);
+            Assert.Equal(50, _playerWalletService.Balance);
             Assert.Contains("Your withdrawal of $50 was successful", result.Message);
         }
 
