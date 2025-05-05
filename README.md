@@ -1,4 +1,4 @@
-# 🎰 BettyGame
+# SlottGame
 
 **BettyGame** is a lightweight console-based betting game built with C#. It allows users to manage a virtual wallet by placing bets, depositing funds, and making withdrawals. The game outcomes are determined using configurable probabilities.
 
@@ -15,7 +15,7 @@
 
 ---
 
-## ⚙️ Configuration (`appsettings.json`)
+## Configuration (`appsettings.json`)
 
 The game's logic and outcomes are driven by the following configuration:
 
@@ -39,7 +39,7 @@ The game's logic and outcomes are driven by the following configuration:
 }
 ```
 
-## 📝 Notes:
+## Notes:
 
 * The sum of Loss.Chance, SmallWin.Chance, and BigWin.Chance should equal 1.0.
 * WinRatioStart and WinRatioEnd determine the multiplier for winnings.
