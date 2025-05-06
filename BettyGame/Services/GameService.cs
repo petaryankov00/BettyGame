@@ -44,14 +44,14 @@ namespace BettyGame.Services
                             break;
 
                         case "exit":
-                            Console.WriteLine("Thank you for playing. Hope to see you again soon.");
+                            _consoleWrapper.WriteLine("Thank you for playing. Hope to see you again soon.");
                             return;
                     }
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                _consoleWrapper.WriteLine(ex.Message);
                 throw;
             }
         }
